@@ -35,25 +35,10 @@ let CTYPE = (() => {
             max: maxlength.title
         },
 
-        expirePeriods: [{key: '1D', label: '一天'},
-            {key: '3D', label: '三天'},
-            {key: '1W', label: '一周'},
-            {key: '1M', label: '一个月'},
-            {key: '3M', label: '三个月'},
-            {key: '6M', label: '六个月'},
-            {key: '1Y', label: '一年'},
-            {key: '2Y', label: '两年'},
-            {key: '3Y', label: '三年'},
-            {key: '5Y', label: '五年'},
-            {key: '10Y', label: '十年'}],
-
         link: {
             admin_admins: {key: '/app/admin/admins', path: '/app/admin/admins', txt: '管理员'},
             admin_roles: {key: '/app/admin/roles', path: '/app/admin/roles', txt: '权限组'},
 
-            articles: {key: '/app/content/articles', path: '/app/content/articles', txt: '文章管理'},
-            tags: {key: '/app/content/tags', path: '/app/content/tags', txt: '新闻标签管理'},
-            banners: {key: '/app/content/banners', path: '/app/content/banners', txt: 'Banner管理'},
 
         },
 
@@ -124,23 +109,6 @@ let CTYPE = (() => {
                 },
             },
         },
-        file: {
-            posters: {
-                maxSize: 1024 * 1024,
-            }
-        },
-        REGION_PATH: window.location.protocol + '//c1.wakkaa.com/assets/pca-code.json',
-
-        redirectTypes: [{value: 'NONE', label: '不跳转'}, {
-            value: 'LINK',
-            label: 'url跳转'
-        }, {
-            value: 'ARTICLES', label: '新闻模块'
-        }, {
-            value: 'ARTICLE', label: '文章单页', withPayload: true
-        }],
-
-        colors: ['#f50', '#2db7f5', '#87d068', '#108ee9']
 
     };
 
