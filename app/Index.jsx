@@ -45,7 +45,7 @@ export default class Index extends Component {
             if (count > 3) {
                 clearTimeout(timer);
                 App.logout();
-                App.go('/');
+                App.go('/login');
             }
             Utils.adm.initPermissions();
         } else {

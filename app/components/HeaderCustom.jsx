@@ -52,6 +52,17 @@ class HeaderCustom extends React.Component {
                       type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
                       onClick={this.toggleCollapsed}/>
 
+                <Menu className='header-top-bar'
+                      mode="horizontal" style={{lineHeight: '65px', float: 'right'}}>
+                    <SubMenu
+                        title={<Avatar size={40} icon="user"/>}>
+                        <MenuItemGroup title="用户中心">
+                            <Menu.Item key="pwd"><span>修改密码</span></Menu.Item>
+                            <Menu.Item key="logout"><span>退出登录</span></Menu.Item>
+                        </MenuItemGroup>
+                    </SubMenu>
+                </Menu>
+
             </Header>
         )
     }

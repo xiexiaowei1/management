@@ -76,7 +76,6 @@ class SiderCustom extends Component {
 
         let {
             ADMIN_LIST,
-
         } = Utils.adminPermissions;
 
         let withAdmin = ADMIN_LIST
@@ -104,6 +103,8 @@ class SiderCustom extends Component {
                     <SubMenu key='/app/admin'
                         title={<span><Icon type="usergroup-add" /><span
                             className="nav-text">管理&权限</span></span>}>
+                        <Menu.Item key="admin"><Link
+                            to='/admin'>管理员权限</Link></Menu.Item>
                     </SubMenu>
 
                 </Menu>
